@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* ---------- Design tokens (AquaCreds "blue carbon" theme) ---------- */
+@theme {
+  --color-ocean-50: #eefdfb;
+  --color-ocean-100: #d3f8f3;
+  --color-ocean-200: #adf0e9;
+  --color-ocean-300: #74e3db;
+  --color-ocean-400: #35cdc6;
+  --color-ocean-500: #16b1ac;
+  --color-ocean-600: #0d8f8d;
+  --color-ocean-700: #107272;
+  --color-ocean-800: #135a5c;
+  --color-ocean-900: #144b4d;
+  --color-ocean-950: #052e30;
+
+  --color-sand-50: #f7f7f4;
+  --color-ink: #0f1e22;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #f4faf9;
+  --foreground: #0f1e22;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* thin scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5d3;
+  border-radius: 9999px;
+}
